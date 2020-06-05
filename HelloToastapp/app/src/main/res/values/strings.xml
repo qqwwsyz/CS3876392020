@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">HelloToastapp</string>
+    <string name="button_label_toast" >Toast</string>
+
+    <string name="button_label_count">COUNT</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+
+</resources>
