@@ -1,0 +1,14 @@
+<resources>
+<string name="app_name">MenuProject</string>
+
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+<string name="title_activity_new">NewActivity</string>
+<string name="title_activity_help">HelpActivity</string>
+    <string name="Hello_world">Hello world</string>
+    <string name="my_name">Hello Zheming</string>
+    <string name="this_is_help_activity">This is Help Activity</string>
+</resources>
