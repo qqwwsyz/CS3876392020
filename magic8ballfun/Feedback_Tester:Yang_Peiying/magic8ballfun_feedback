@@ -1,0 +1,26 @@
+TESTER: YANG PEIYING
+DEVELOPER: CHEN ZHEMING
+PROJECT: magic8ballfun
+TESTED ON: 6/14/2020
+
+I am Yang Peiying and I tested the app of Chen Zheming.
+
+Chen completed the project on time, I submitted the feedback late.
+
+The code is available at: https://github.com/qqwwsyz/CS3876392020.git.
+
+The minimum SDK of the apk is <15>.
+The target SDK of the apk is <29>.
+
+The code, the apk and the 3 screenshots are available at the right location in the GitHub repository.
+
+The code use fragments.
+
+The app has been personalized by the student.But there aren't images that match with each random answer.
+
+I tested the app on phone(s)/tablet(s) (model(s)) / emulator(s) with OS <X>. But xml for Phone_landscape and Tablet_Portrait are missing
+
+The app does not crash.
+
+SMS works. (same for Phone, Web, Map, Share, New Activity, Help). If it does not work, be sure to identify and mention the problem.
+Please mention all the problems with the app, what should be improved, and put a general comment. The best thing is to create screenshots to showcase the problems (with explanations).
