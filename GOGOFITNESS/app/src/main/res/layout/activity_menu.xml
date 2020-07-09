@@ -90,7 +90,8 @@
         android:layout_marginTop="273dp"
         android:background="#FF80AB"
         android:onClick="gotoBelly"
-        android:text="Start" />
+        android:text="Start"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/button2"
@@ -104,6 +105,7 @@
         android:layout_marginTop="111dp"
         android:background="#FF80AB"
         android:onClick="gotoPacks"
-        android:text="Start" />
+        android:text="Start"
+        android:textAlignment="center" />
 
 </RelativeLayout>
