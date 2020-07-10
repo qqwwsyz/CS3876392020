@@ -18,14 +18,14 @@ public class Menu extends AppCompatActivity {
     public void gotoBelly(View v){
         bool=0;
         Intent myIntent = new Intent();
-        myIntent.setClass(this, Belly.class);
+        myIntent.setClass(this, Planer.class);
         myIntent.putExtra("intVariableName", bool);
         startActivity(myIntent);
     }
     public void gotoPacks(View v){
         bool=1;
         Intent myIntent = new Intent();
-        myIntent.setClass(this, Belly.class);
+        myIntent.setClass(this, Planer.class);
         myIntent.putExtra("intVariableName", bool);
         startActivity(myIntent);
     }

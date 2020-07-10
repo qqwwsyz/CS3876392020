@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".BMI"></activity>
-        <activity android:name=".belly_exercise" />
+        <activity android:name=".Exercise" />
         <activity android:name=".Menu" />
-        <activity android:name=".Belly" />
+        <activity android:name=".Planer" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

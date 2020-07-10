@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#82B1FF"
-    tools:context=".Belly">
+    android:background="@drawable/logopink"
+    tools:context=".Exercise">
 
     <ImageView
         android:id="@+id/textView4"
@@ -20,26 +20,8 @@
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/go" />
 
-    <TextView
-        android:id="@+id/textView711"
-        android:layout_width="301dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="111dp"
-        android:layout_marginBottom="544dp"
-        android:fontFamily="@font/averia_serif_libre_bold_italic"
-        android:text="Lose Belly Fat"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp" />
-
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/listView1"
         android:layout_width="386dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -51,6 +33,5 @@
         android:layout_marginTop="166dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp" />
-
 
 </RelativeLayout>

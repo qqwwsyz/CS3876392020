@@ -1,20 +1,16 @@
 package com.example.gogofitness;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import pl.droidsonroids.gif.GifImageView;
 
-public class belly_exercise extends AppCompatActivity {
+public class Exercise extends AppCompatActivity {
 
     String [] listString1;
     String [] listString2;
@@ -23,22 +19,18 @@ public class belly_exercise extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_belly_exercise);
+        setContentView(R.layout.activity_exercise);
 
         Intent mIntent = getIntent();
         int intValue = mIntent.getIntExtra("intVariableName", 0);
-        String a=String.valueOf(intValue+1);
 
-        a="Day "+a;
-        TextView textView= (TextView) findViewById(R.id.textView11);
-        textView.setText(a);
 
         switch (intValue) {
             case 0:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 10", "x 20", "x 10", "x 25", "x 10",
                         "x 15", "x 25", "x 25", "x 20", "x 25",
                         "x 15", "x 20", "x 25", "x 15", "x 10"};
@@ -50,9 +42,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 1:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 10", "x 20", "x 10", "x 25", "x 10",
                         "x 15", "x 25", "x 25", "x 20", "x 25",
                         "x 15", "x 20", "x 25", "x 15", "x 10"};
@@ -64,9 +56,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 2:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 10", "x 20", "x 10", "x 25", "x 10",
                         "x 15", "x 25", "x 25", "x 20", "x 25",
                         "x 15", "x 20", "x 25", "x 15", "x 10"};
@@ -78,9 +70,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 3:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 15", "x 25", "x 15", "x 30", "x 15",
                         "x 20", "x 30", "x 30", "x 25", "x 30",
                         "x 20", "x 25", "x 30", "x 20", "x 15"};
@@ -92,9 +84,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 4:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 15", "x 25", "x 15", "x 30", "x 15",
                         "x 20", "x 30", "x 30", "x 25", "x 30",
                         "x 20", "x 25", "x 30", "x 20", "x 15"};
@@ -105,9 +97,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 5:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 15", "x 25", "x 15", "x 30", "x 15",
                         "x 20", "x 30", "x 30", "x 25", "x 30",
                         "x 20", "x 25", "x 30", "x 20", "x 15"};
@@ -119,9 +111,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 6:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 15", "x 25", "x 15", "x 30", "x 15",
                         "x 20", "x 30", "x 30", "x 25", "x 30",
                         "x 20", "x 25", "x 30", "x 20", "x 15"};
@@ -140,9 +132,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 8:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 20", "x 30", "x 20", "x 35", "x 20",
                         "x 25", "x 35", "x 35", "x 30", "x 35",
                         "x 25", "x 30", "x 35", "x 25", "x 25"};
@@ -154,9 +146,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 9:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 20", "x 30", "x 20", "x 35", "x 20",
                         "x 25", "x 35", "x 35", "x 30", "x 35",
                         "x 25", "x 30", "x 35", "x 25", "x 25"};
@@ -168,9 +160,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 10:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 20", "x 30", "x 20", "x 35", "x 20",
                         "x 25", "x 35", "x 35", "x 30", "x 35",
                         "x 25", "x 30", "x 35", "x 25", "x 25"};
@@ -182,9 +174,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 11:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30"};
@@ -196,9 +188,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 12:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30"};
@@ -210,9 +202,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 13:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30"};
@@ -224,9 +216,9 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 14:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30"};
@@ -238,10 +230,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 15:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30",
@@ -254,10 +246,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 16:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30",
@@ -271,10 +263,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 17:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing"};
                 listString2= new String[]{"x 25", "x 35", "x 25", "x 40", "x 25",
                         "x 30", "x 40", "x 40", "x 35", "x 40",
                         "x 30", "x 35", "x 40", "x 30", "x 30",
@@ -288,10 +280,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 18:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up"};
                 listString2= new String[]{"x 30", "x 40", "x 30", "x 45", "x 30",
                         "x 35", "x 45", "x 45", "x 40", "x 45",
                         "x 35", "x 40", "x 45", "x 35", "x 35",
@@ -305,10 +297,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 19:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up"};
                 listString2= new String[]{"x 30", "x 40", "x 30", "x 45", "x 30",
                         "x 35", "x 45", "x 45", "x 40", "x 45",
                         "x 35", "x 40", "x 45", "x 35", "x 35",
@@ -329,10 +321,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 21:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
                         "Barbell Lunge"};
                 listString2= new String[]{"x 35", "x 45", "x 35", "x 50", "x 35",
                         "x 40", "x 50", "x 50", "x 45", "x 50",
@@ -348,10 +340,10 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 22:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
                         "Barbell Lunge"};
                 listString2= new String[]{"x 35", "x 45", "x 35", "x 50", "x 35",
                         "x 40", "x 50", "x 50", "x 45", "x 50",
@@ -374,11 +366,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 24:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 40", "x 50", "x 40", "x 55", "x 40",
                         "x 45", "x 55", "x 55", "x 50", "x 55",
                         "x 45", "x 50", "x 55", "x 45", "x 45",
@@ -393,11 +385,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 25:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 40", "x 50", "x 40", "x 55", "x 40",
                         "x 45", "x 55", "x 55", "x 50", "x 55",
                         "x 45", "x 50", "x 55", "x 45", "x 45",
@@ -412,11 +404,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 26:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 40", "x 50", "x 40", "x 55", "x 40",
                         "x 45", "x 55", "x 55", "x 50", "x 55",
                         "x 45", "x 50", "x 55", "x 45", "x 45",
@@ -431,11 +423,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 27:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 45", "x 55", "x 45", "x 60", "x 45",
                         "x 50", "x 60", "x 60", "x 55", "x 60",
                         "x 50", "x 55", "x 60", "x 50", "x 50",
@@ -450,11 +442,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 28:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 45", "x 55", "x 45", "x 60", "x 45",
                         "x 50", "x 60", "x 60", "x 55", "x 60",
                         "x 50", "x 55", "x 60", "x 50", "x 50",
@@ -469,11 +461,11 @@ public class belly_exercise extends AppCompatActivity {
                 break;
             case 29:
 
-                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose Ardha Chandrasana", "Iron Cross Stretch", "Mountain Climber",
-                        "Pretzel Stretch", "Addauctor stretch", "All Fours Squaad Stretch", "Chest Stretch with Exercise Ball", "Lying Leg Raise",
-                        "Crossover Kneeling Hip Stretch", "Ceiling Look Stretch", "Exercise Ball Lying Side Lat Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
-                        "Cossack Squatsgif", "Kettlebell Overhand Grip Swing", "Sit-up with Arms on Chest", "Push up", "Front Plank",
-                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip on floor"};
+                listString1= new String[]{"Burpee", "Elbows Back Stretch", "Half Moon Pose", "Iron Cross Stretch", "Mountain Climber",
+                        "Pretzel Stretch", "Addauctor stretch", "All Fours quad Stretch", "Exercise Ball Chest Stretch", "Lying Leg Raise",
+                        "Crossover Kneeling Stretch", "Ceiling Look Stretch", "Exercise Ball Side Stretch", "Kneeling Lat Stretch", "Roll-overs into V-sits",
+                        "Cossack Squatsgif", "Kettlebell Overhand Swing", "Sit-up", "Push up", "Front Plank",
+                        "Barbell Lunge", "Crunch Floor", "Diamond Push up", "Bench dip"};
                 listString2= new String[]{"x 45", "x 55", "x 45", "x 60", "x 45",
                         "x 50", "x 60", "x 60", "x 55", "x 60",
                         "x 50", "x 55", "x 60", "x 50", "x 50",
