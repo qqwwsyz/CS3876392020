@@ -27,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void gotoChat(View v){
+        Intent intent = new Intent(this, Chat.class);
+        startActivity(intent);
 
+    }
 
 
 }
