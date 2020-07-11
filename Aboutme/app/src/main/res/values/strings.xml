@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aboutme</string>
+
+    <string name="name">Zheming Chen</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">Hello! My name is Zheming.
+        \n\nI love video games.
+        \n\nI am really good at video games.
+        \n\nI love drinking wines.
+        \n\nThe last time I got drunk is when I was 20.
+        \n\nI come from China.
+        \n\nI am good at cooking, I could make a lot of dishes.
+        \n\nLast time when I was in German, I drunk a lot of beer.
+        \n\n\n Feels tired, I want to go to sleep right now
+        \n\nzzzzzzzzzzzzz
+
+    </string>
+
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+
+</resources>
