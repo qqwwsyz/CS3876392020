@@ -45,6 +45,7 @@
             android:onClick="gotoMenu"
             app:srcCompat="@drawable/trainer" />
 
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
@@ -94,6 +95,13 @@
             android:textSize="30sp"
             app:backgroundTint="#00917C94" />
     </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/button4"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:onClick="gotoHelp"
+        app:srcCompat="@drawable/wenhao" />
 
 
 </LinearLayout>

@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void gotoHelp(View v){
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
+
+    }
     public void gotoBmi(View v){
         Intent intent = new Intent(this, BMI.class);
         startActivity(intent);
