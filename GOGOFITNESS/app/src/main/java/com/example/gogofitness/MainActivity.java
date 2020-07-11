@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.share_item:
                 Intent intent5 = new Intent(Intent.ACTION_SEND);
                 intent5.setType("text/plain");
-                intent5.putExtra(Intent.EXTRA_TEXT, "Share the love");
-                startActivity(Intent.createChooser(intent5,"Share the love"));
+                intent5.putExtra(Intent.EXTRA_TEXT, "Tell your friend about us!");
+                startActivity(Intent.createChooser(intent5,"Tell your friend about us!"));
                 startActivity(intent5);
                 break;
             case R.id.about_us:
