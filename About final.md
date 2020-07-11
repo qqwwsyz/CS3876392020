@@ -1,5 +1,5 @@
 # CS3876392020
-Zheming Chen 
+Zheming Chen & Guo Tang
 Final Project : GOGOFITNESS
   
   
