@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">HelloworldKotlin</string>
-    <string name="birthday_hola">Happy Birthday to myself : )</string>
+    <string name="birthday_hola">Happy Birthday and make a wish</string>
 </resources>
